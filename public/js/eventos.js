@@ -3,6 +3,7 @@ function ready(){
 	$("#search").on("keydown",function(event){
 		if(event.keyCode == 13 ) searchEmployee();
 	});
+
 }
 
 function goToMonth(month){
@@ -51,4 +52,25 @@ function cerrarResult(){
 	$("#spaceResult").html('');
 	$("#spaceResult").hide();
 	$("#search").val('');
+}
+
+function imageF(img){
+
+	if(img == 'images/logo.jg')
+		var i = img;
+	else
+		var i = 'imagesEmployees/'+img;
+	
+	$(".imageFull").show();	
+	$("#imageFull").attr("src",i);
+
+	$(".imageFull").animate({
+		opacity : "1",
+	},500);
+}
+
+function imageClose(){
+
+	$("#imageFull").attr("src",'');
+	$(".imageFull").hide();	
 }

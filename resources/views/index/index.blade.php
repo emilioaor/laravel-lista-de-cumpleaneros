@@ -8,9 +8,9 @@
 			<tr>
 				@foreach($employees as $employee)
 					@if(file_exists(public_path().'/imagesEmployees/'.$employee->image) )
-						<th><span id="row{{ $employee->id }}"></span><img class="m{{ $employee->month }}" src="{{ url('imagesEmployees/'.$employee->image) }}"></th>
+						<th><span id="row{{ $employee->id }}"></span><img class="m{{ $employee->month }}" src="{{ url('imagesEmployees/'.$employee->image) }}" onclick="imageF('{{ $employee->image }}')"></th>
 					@else
-						<th><img class="m{{ $employee->month }}" src="{{ url('images/logo.jpg') }}"></th>
+						<th><img class="m{{ $employee->month }}" src="{{ url('images/logo.jpg') }}" onclick="imageF('images/logo.jpg')"></th>
 					@endif
 				@endforeach
 			</tr>
@@ -52,5 +52,9 @@
 		<div class="col-md-2 text-center"><a href="JavaScript:goToMonth(10)">Octubre</a></div>
 		<div class="col-md-2 text-center"><a href="JavaScript:goToMonth(11)">Noviembre</a></div>
 		<div class="col-md-2 text-center"><a href="JavaScript:goToMonth(12)">Diciembre</a></div>
+	</div>
+	<div class="imageFull" onclick="imageClose()">
+		<button class="btn btn-default" onclick="imageClose()"><span class="glyphicon glyphicon-remove"></span> Cerrar</button>
+		<img id="imageFull" src="{{ url('images/logo.jpg') }}">
 	</div>
 @endsection
