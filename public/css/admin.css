@@ -1,0 +1,26 @@
+.menu .container{
+	background: #fff;
+	padding: 10px;
+}
+.menu ul{
+	padding: 0px;
+}
+.menu li{
+	list-style: none;
+	display: inline-block;
+	border:solid;
+	background: #333;
+	padding: 10px;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+.menu li a{
+	color: #FFF;
+}
+.thumb{
+	width: 100px;
+	height: 100px;
+}
+.date{
+	max-width: 50px;
+}

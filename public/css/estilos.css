@@ -1,0 +1,79 @@
+/* template.main */
+body{
+	background: #00EDBD;
+}
+header .container{
+	background: #333;
+	color: #fff;
+}
+.main .container{
+	background: #fff;
+}
+.spaceLogo .container{
+	background: #fff;
+	padding-bottom: 30px;
+}
+.spaceLogo img{
+	width: 100%;
+	max-width: 300px;
+	display: table;
+	margin: 0 auto;
+}
+footer .container{
+	background: #333;
+	color: #fff;
+}
+/* Mis estilos*/
+.employees{
+	margin-top: 20px;
+	background: #eee;
+	padding: 20px;
+	border-radius: 10px;
+	border:solid;
+	border-width: 1px;
+	border-color: #00AD8A;
+	overflow: auto;
+}
+.employees img{
+	width: 250px;
+	height: 250px;
+	border-radius: 10px;
+	border:solid;
+	border-color: #00AD8A;
+	cursor: pointer;
+	padding: 20px;
+	transition: all 0.3s 0s linear;
+}
+.employees img:hover{
+	padding: 0px;
+	transform: scale(1.1,1.1);
+}
+.employees th{
+	padding: 10px;
+}
+.spaceSearch{
+	margin-top: 20px;
+}
+.spaceResult{
+	position: absolute;
+	background: #ccc;
+	padding: 5px;
+	z-index: 10;
+	display: none;
+}
+.spaceResult img{
+	width: 100%;
+	max-width: 500px;
+	max-height: 500px;
+}
+.spaceResult a{
+	color: #222;
+}
+.months{
+	margin-top: 20px;
+}
+.months a{
+	font-size: 16px;
+	color: #00AD8A;
+	font-weight: bold;
+}
