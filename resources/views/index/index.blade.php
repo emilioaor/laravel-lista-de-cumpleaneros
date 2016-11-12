@@ -57,4 +57,20 @@
 		<button class="btn btn-default" onclick="imageClose()"><span class="glyphicon glyphicon-remove"></span> Cerrar</button>
 		<img id="imageFull" src="{{ url('images/logo.jpg') }}">
 	</div>
+	@if( count($employeesToday)>0 )
+		<div class="employeeAlert">
+			<a href="JavaScript:employeeAlertClose()" class="text-center">Cerrar</a>
+			<h3 class="text-center">Feliz Cumpleaños!</h3>
+			@foreach($employeesToday as $employee)
+				<div class="text-center">
+					@if( file_exists(public_path().'/imagesEmployees/'.$employee->image ) )
+						<img src="{{ url('imagesEmployees/'.$employee->image) }}">
+					@else
+						<img src="{{ url('images/logo.jpg') }}">
+					@endif
+					<p class="text-center">{{ $employee->name }}</p>
+				</div>
+			@endforeach
+		</div>
+	@endif
 @endsection

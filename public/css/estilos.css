@@ -77,8 +77,10 @@ footer .container{
 	color: #00AD8A;
 	font-weight: bold;
 }
+
+/* objetos flotantes */
 .imageFull{
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.7);
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -100,4 +102,31 @@ footer .container{
 	position: fixed;
 	top: 10px;
 	right: 10px;
+}
+.employeeAlert{
+	position: fixed;
+	bottom: -1000px;
+	border:solid;
+	background: #00EDBD;
+	border-color: #222;
+	border-radius: 10px;
+	border-width: 1px;
+	padding: 5px;
+	z-index: 11;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+}
+.employeeAlert a{
+	color: #222;
+}
+.employeeAlert a:nth-child(1){
+	display: table;
+	margin: 0 auto;
+}
+.employeeAlert img{
+	width: 150px;
+	height: 150px;
+}
+.employeeAlert div{
+	float: left;
+	padding: 5px;
 }

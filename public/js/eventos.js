@@ -4,6 +4,10 @@ function ready(){
 		if(event.keyCode == 13 ) searchEmployee();
 	});
 
+	$(".employeeAlert").animate({
+		bottom : "50px"
+	},2000);
+
 }
 
 function goToMonth(month){
@@ -72,5 +76,11 @@ function imageF(img){
 function imageClose(){
 
 	$("#imageFull").attr("src",'');
-	$(".imageFull").hide();	
+	$(".imageFull").hide();
+	$(".imageFull").css("opacity","0");
+}
+
+function employeeAlertClose(){
+
+	$(".employeeAlert").hide();
 }
